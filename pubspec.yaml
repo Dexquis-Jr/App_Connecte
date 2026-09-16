@@ -1,0 +1,40 @@
+name: movie_app
+description: "Full-stack Flutter app — JWT auth + TMDB movie data, offline-first with Hive cache."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Networking
+  dio: ^5.4.3
+
+  # State management
+  provider: ^6.1.2
+
+  # Local persistence / cache
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.2.2
+
+  # Connectivity (offline detection)
+  connectivity_plus: ^6.0.3
+
+  # Utilities
+  equatable: ^2.0.5
+  jwt_decoder: ^2.0.1
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mocktail: ^1.0.3
+
+flutter:
+  uses-material-design: true
